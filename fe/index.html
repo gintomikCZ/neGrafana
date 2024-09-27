@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script>
+      axios({
+        method: 'post',
+        url: 'http://localhost:3000/data',
+        data: {
+          tags: ['tomas']
+        }
+      })
+      .then(data => { console.log(data) })
+    </script>
+  </body>
+</html>
